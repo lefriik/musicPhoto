@@ -1,10 +1,10 @@
 import { useState } from 'react';
-import AddCategory from './components/AddCategory';
-import GifGrid from './components/GifGrid';
+import { AddCategory, GifGrid } from './components';
+
 
 const GifExpertApp = () => {
 
-  const [categories, setCategories] = useState(['Hip hop'])
+  const [categories, setCategories] = useState(['Hip Hop'])
 
   const onAddCategory = newCategory => {
     
@@ -17,7 +17,8 @@ const GifExpertApp = () => {
 
   return (
     <>
-        <h1>Gif</h1>
+        
+        
 
         <AddCategory 
           onNewCategory={ onAddCategory }
